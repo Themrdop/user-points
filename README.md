@@ -6,8 +6,8 @@
 
 Method | End Point | Description | Input
 ------ | --------- | ----------- | -------
-Post   | /AddPoints | Add the points to an user base on the user ID |{"userId": "text","points": number}
-Post   | /RemovePoints | Substract the amount of points that are sent as a parameter. |{"userId": "text","points": number}
+Put   | /AddPoints | Add the points to an user base on the user ID |{"userId": "text","points": number}
+Put   | /RemovePoints | Substract the amount of points that are sent as a parameter. |{"userId": "text","points": number}
 Get    | /PointsByUser| Returns the numer of ponts of a user | ?userId=userId
 
 ## Stack
@@ -26,4 +26,4 @@ all dockenize
 ## How to run
 
 Run the command:
-'docker-compose -f docker-compose.yml up' in the root of the proyect
+'docker-compose -f docker-compose.yml up' in the root of the proyect this will build and start the service

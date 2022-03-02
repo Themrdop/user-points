@@ -4,8 +4,8 @@ public static class UserPointsEndPoints{
     /// </summary>
     /// <param name="app">Web application object that will map the endpoints</param>
     public static void ConfigureApi(this WebApplication app){
-        app.MapPost("/AddPoints",AddPointsAsync);
-        app.MapPost("/RemovePoints",RemovePointsAsync);
+        app.MapPut("/AddPoints",AddPointsAsync);
+        app.MapPut("/RemovePoints",RemovePointsAsync);
         app.MapGet("/PointsByUser",PointsByUserAsync);
     }
 
